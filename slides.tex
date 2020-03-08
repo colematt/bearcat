@@ -1,0 +1,83 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[math,pangram]{blindtext}
+\title{There Is No Largest Prime Number}
+\date[ISPN ’80]{27th International Symposium of Prime Numbers}
+\author[Euclid]{Euclid of Alexandria \texttt{euclid@alexandria.edu}}
+
+\usetheme{Boadilla}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\tableofcontents	
+\end{frame}
+
+\section{Heading on Level 1 (section)}
+\begin{frame}
+\frametitle{Section}
+\blindtext	
+\end{frame}
+
+\subsection{Heading on Level 2 (subsection)}
+\begin{frame}{Subsection}
+\blindtext	
+\end{frame}
+
+\subsubsection{Heading on Level 3 (subsubsection)}
+\begin{frame}{Subsubsection}
+\blindtext	
+\end{frame}
+
+
+\section{Lists}
+\subsection{Example for list (itemize)}
+\begin{frame}
+\frametitle{Itemize}
+\blinditemize
+\end{frame}
+
+\subsection{Example for list (enumerate)}
+\begin{frame}
+\frametitle{Enumerate}
+\blindenumerate
+\end{frame}
+
+\subsection{Example for list (description)}
+\begin{frame}
+\frametitle{Description}
+\blinddescription
+\end{frame}
+
+\section{Blocks}
+\subsection{Example for Block}
+\begin{frame}
+\frametitle{Block}
+\begin{block}{This is a Block}
+\blindtext
+\end{block}
+\end{frame}
+
+\subsection{Example for Example Block}
+\begin{frame}
+\frametitle{Example Block}
+\begin{exampleblock}{This is an Example Block}
+\blindtext
+\end{exampleblock}
+\end{frame}
+
+\subsection{Example for Alert Block}
+\begin{frame}
+\frametitle{Alert Block}
+\begin{alertblock}{This is an Alert Block}
+\blindtext
+\end{alertblock}
+\end{frame}
+
+\end{document}
