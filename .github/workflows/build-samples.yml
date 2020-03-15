@@ -15,21 +15,15 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: samples/paper.tex
-      - name: Upload paper artifact
-        uses: actions/upload-artifact@v1.0.0
-        with:
-          # Artifact name
-          name: paper.pdf
-          # Directory containing files to upload
-          path: samples/
       - name: Compile LaTeX slides
         uses: xu-cheng/latex-action@master
         with:
           root_file: samples/slides.tex
-      - name: Upload paper artifact
-        uses: actions/upload-artifact@v1.0.0
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
         with:
           # Artifact name
-          name: slides.pdf
+          name: samples
           # Directory containing files to upload
-          path: samples/
+          path: samples
+        if: success()
