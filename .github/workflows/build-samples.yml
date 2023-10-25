@@ -3,7 +3,7 @@ name: Build Samples
 on:
   push:
     branches: [ master ]
-    paths: ['samples/paper.tex', 'samples/slides.tex']
+    paths: ['samples/poster.tex', 'samples/slides.tex']
 
 jobs:
   build_latex:
