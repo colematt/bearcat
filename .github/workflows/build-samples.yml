@@ -2,7 +2,7 @@ name: Build Samples
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths: ['samples/poster.tex', 'samples/slides.tex']
 
 jobs:
